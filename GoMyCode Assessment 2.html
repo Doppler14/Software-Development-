@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="David Ugwu">
+        <meta name="description" content="This is a test page for my second GoMyCode Assessment.">
+        <title>My Second GoMyCode Assessment</title>
+    </head>
+    <style>
+        table, tr, td, caption {
+            border: 1px solid black;
+            font-family: 'Courier New', Courier, monospace;
+            border-collapse: collapse;
+            padding: 0.5rem;
+        }
+    </style>
+    <body>
+
+        <header>
+            <h1>My GoMyCode Webpage</h1>
+            <nav>
+               <fieldset> 
+                    <ul>
+                        <li>
+                            <a href="#Home">Home</a>
+                        </li>
+                        <li>
+                            <a href="#About">About</a>
+                        </li>
+                        <li>
+                            <a href="#Work">Work</a>
+                        </li>
+                        <li>
+                            <a href="#Resume">Resume</a>
+                        </li>
+                        <li>
+                            <a href="#Contact Me">Contact Me</a>
+                        </li>
+
+                    </ul>   
+               </fieldset>
+            </nav>
+        </header>
+           
+        <main>
+            <!--Home Section-->
+            <section id="Home">
+                <h2>Welcome!</h2>
+                Hello and welcome to my page. Make sure to enjoy scrolling through and filling the necessary spaces that need filling.
+
+            </section>
+            
+            <!--About Section-->
+            <section id="About">
+                <h2>About Me</h2>
+                My webpage is inspired by GoMyCode and I love being here. I want to introduce my self a little.
+                <p>My name is David Ugwu. I study in Babcock University. I am in 300 level and in the software engineering department.</p>
+                
+                <p>This is how my schedule looks like</p>
+                
+                <table>
+                    <caption>My Daily Schedule</caption>
+                    <thead>
+                        <tr>
+                            <th>&nbsp;</th>
+                            <th scope="col">Time</th>
+                            <th scope="col">Activity</th>
+                        </tr>
+                    </thead>
+                     <tbody>
+                         <tr>
+                             <th scope="row">Morning</th>
+                             <td>
+                                <time datetime="8:00">8am</time>-<time datetime="11:00">11am</time>
+                             </td>
+                             <td>Write Code</td>
+                         </tr>
+                           
+                         <tr>
+                             <th scope="row">Break</th>
+                             <td>
+                                 <time datetime="11:00">11am</time>-<time datetime="12:00">12pm</time>
+                             </td>
+                             <td>Eat Lunch</td>
+                         </tr>
+                         <tr>
+                             <th scope="row">Afternoon</th>
+                             <td>
+                                 <time datetime="12:00">12pm</time>-<time datetime="17:00">5pm</time>
+                             </td>
+                             <td>Study for other courses</td>
+                         </tr>
+                         <tr>
+                             <th scope="row">Evening</th>
+                             <td rowspan="2">All other times</td>
+                             <td>Freetime</td>
+                         </tr>
+                         <tr>
+                             <th>Night</th>
+                             <td>Sleep</td>
+                         </tr>
+                         
+                     </tbody> 
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">And that is what I do everyday, 5 days a week</td>
+                        </tr>
+                    </tfoot>
+                     
+                </table>
+
+            
+                <p>Here's a form for you to introduce yourself too</p>
+                <form action="#">
+                    <fieldset>
+                        <p>
+                            <div>
+                                <label for="name">Full Name:</label>
+                                <input type="text" id="name" name="full name">
+                            </div>
+                        </p>
+                        <p>    
+                            <div>
+                                <label for="Age">Age:</label>
+                                <input type="Number" id="Age" name="Age">
+                            </div>
+                        </p>
+                        <p>    
+                            <div>
+                                <label for="message">Institute attended:</label>
+                                <input type="text" id="message" name="institute attended">
+                            </div>
+                        </p>
+                        <p>
+                            <button type="submit">Send Message</button>
+                        </p>
+                    </fieldset>
+                </form>
+            </section>
+            
+            <!--Work Section-->
+            <section id="Work">
+                <h2>My Work</h2>
+                <p>In this section, you'll find the various projects i'm working on</p>
+                <ul>
+                    <li><b>Project 1</b></li>
+                </ul>
+                <img src="../GoMyCode Assessment 2/Images/commerce.jpg" alt="A page about E-Commerce" height="300px">
+                <figcaption><i>A page about E-Commerce</i></figcaption>
+                
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/3DdJ1JynG8M?si=E6WY5AM_2ctdhYYX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <ul>
+                    <li><b>Project 2</b></li>
+                </ul>
+                <img src="../GoMyCode Assessment 2/Images/hire.jpg" alt="A page for hiring" height="300px">
+                <figcaption><i>A page for hiring</i></figcaption>
+            </section>
+
+            <section id="Resume">
+                <h2>My Resume</h2>
+                <p>Download my resume to know more about my work</p>
+                <a href="Resume">Download Resume</a>
+            </section>
+            
+            <!--Contact Section-->
+            <section id="Contact">
+                <h2>Contact Me</h2>
+                <form action="https://httpbin.org/get" method="get">
+                    <fieldset>
+                        <legend>Send Me A Message</legend>
+                        <p>
+                            <label for="Firstname">First Name:</label>
+                            <input type="text" name="Firstname" id="Firstname"  placeholder="Your Firstname" autocomplete="on" required autofocus>
+                        </p>
+                        <p>
+                            <label for="Lastname">Last Name:</label>
+                            <input type="text" name="Lastname" id="Lastname" placeholder="Your Lastname" autocomplete="on" required >
+                        </p>
+                        <p>
+                            <label for="Email">Email:</label>
+                            <input type="email" name="email" id="email" placeholder="johndoe123@gmail.com" autocomplete="on" required autofocus>
+                        </p>
+                        <p>
+                            <label for="number">Phone Number:</label>
+                            <input type="number" name="number" id="number" placeholder="+2341234567890" autocomplete="on" required>
+                        </p>
+                        <p>
+                            <label for="Message">Your Message:</label>
+                            <br>
+                    
+                            <textarea name="Message" id="Message" cols="30" rows="20" placeholder="Type Your Message Here" autocomplete="on" required></textarea>
+                        </p>
+                    </fieldset>
+                    <button type="submit">Send</button>
+                    <button type="reset">Reset</button>
+            </section>
+        </main>
+        <hr>
+        <footer>
+            &copy; David Ugwu 2024.
+            <p>All Rights Reserved</p>
+        </footer>
+    </body>
+</html>
