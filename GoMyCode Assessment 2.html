@@ -7,52 +7,158 @@
         <title>My Second GoMyCode Assessment</title>
     </head>
     <style>
+        #nav{
+            display: flex;
+            list-style-type: none;
+        }
+        nav{
+            text-decoration: none;
+        }
+        a{
+            text-decoration: none;
+            margin: 17px;
+            border: solid 1px #ccc;
+            color: black; 
+            padding: 12px; 
+            border-radius: 6px;
+            background-color:  #4474c2;
+        }
+        ul{
+            margin-left: 890px;
+        
+        }
         table, tr, td, caption {
-            border: 1px solid black;
+            border: 2px solid black;
             font-family: 'Courier New', Courier, monospace;
             border-collapse: collapse;
             padding: 0.5rem;
+            text-align: center;
+            border-radius: 4px;
         }
+        #main{
+            padding: 10px;
+        }
+        #head{
+            border-radius: 4px;
+        }
+        #body{
+            font-family: Roboto, sans-serif;
+        }
+        .form{
+            border: solid 1px black;
+            border-radius: 3px;
+            width: 40%;
+            padding: 15px;
+        }
+        .form input{
+            border: solid 1px;
+            border-radius: 3px;
+            padding: 10px;
+            width: 60%;
+        }
+        h2,h1{
+            color: #4474c2;
+        }
+        #home{
+            background-color: #d1e3ff;
+            padding: 50px 470px 50px 40px;
+            text-align: left;
+            line-height: 20px;
+            display: flex; 
+            justify-content: space-between; 
+            border-radius: 4px;
+        }
+        #words{
+            font-size: larger;
+            line-height: 40px;
+        }
+        #home>img{
+            margin-left: 160px;
+            border-radius: 4px;
+        }
+        #Work{
+            background-color: #d1e3ff;
+            padding: 90px;
+            border-radius: 4px;
+            margin-top: 20px;
+            display: flex;
+        }
+        #service{
+            margin-right: 350px;
+            line-height: 50px;
+        }
+        #Work>img{
+            margin-right: 670px;
+            margin-top: 250px;
+        }
+        #pictures{
+            display: flex;
+        }
+        #about{
+            margin: 4px;
+        }
+        #Contact{
+            background-color: #d1e3ff;
+            padding: 15px;
+            border-radius:4px;
+            margin-top: 40px;
+        }
+        #Contact input{
+            border: solid 1px #ccc;
+            border-radius: 4px;
+            padding: 10px;
+            width: 60%;
+        }
+        button{
+            padding: 10px;
+            background-color: #4474c2;
+            border-radius: 4px;
+        }
+        #Resume{
+            line-height: 20px;
+            margin-left: 5px;
+        }
+        
     </style>
-    <body>
+    <body id="body">
 
-        <header>
+        <header id="head">
             <h1>My GoMyCode Webpage</h1>
-            <nav>
-               <fieldset> 
-                    <ul>
-                        <li>
-                            <a href="#Home">Home</a>
-                        </li>
-                        <li>
-                            <a href="#About">About</a>
-                        </li>
-                        <li>
-                            <a href="#Work">Work</a>
-                        </li>
-                        <li>
-                            <a href="#Resume">Resume</a>
-                        </li>
-                        <li>
-                            <a href="#Contact Me">Contact Me</a>
-                        </li>
-
-                    </ul>   
-               </fieldset>
+            <nav id="navy">
+                <ul id="nav">
+                    <li>
+                        <a href="#Home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#About">About</a>
+                    </li>
+                    <li>
+                        <a href="#Work">Work</a>
+                    </li>
+                    <li>
+                        <a href="#Resume">Resume</a>
+                    </li>
+                    <li>
+                        <a href="#Contact Me">Contact Me</a>
+                    </li>
+                </ul>        
             </nav>
         </header>
-           
-        <main>
+         <hr>
+        <main id="main">
             <!--Home Section-->
-            <section id="Home">
-                <h2>Welcome!</h2>
-                Hello and welcome to my page. Make sure to enjoy scrolling through and filling the necessary spaces that need filling.
-
+            <section id="home">
+                <div id="words">
+                    <h1 style="font-size: 50px;">Welcome!</h1>
+                    Hello and welcome to my page. Make sure to enjoy scrolling through and filling the necessary spaces that need filling.
+                </div>
+               
+                <img src="../GoMyCode Assessment 2/Images/animatedcoder.jpg" alt="A Programmer at work" height="400px">
             </section>
             
             <!--About Section-->
             <section id="About">
-                <h2>About Me</h2>
+                <h2 style="font-size: 50px;">About Me</h2>
                 My webpage is inspired by GoMyCode and I love being here. I want to introduce my self a little.
                 <p>My name is David Ugwu. I study in Babcock University. I am in 300 level and in the software engineering department.</p>
                 
@@ -111,24 +217,24 @@
 
             
                 <p>Here's a form for you to introduce yourself too</p>
-                <form action="#">
-                    <fieldset>
+                <form class="form">
+                    
                         <p>
                             <div>
-                                <label for="name">Full Name:</label>
-                                <input type="text" id="name" name="full name">
+                                <label for="name"></label>
+                                <input type="text" id="name" name="full name" placeholder="Fullname">
                             </div>
                         </p>
                         <p>    
                             <div>
-                                <label for="Age">Age:</label>
-                                <input type="Number" id="Age" name="Age">
+                                <label for="Age"></label>
+                                <input type="Number" id="Age" name="Age" placeholder="Age">
                             </div>
                         </p>
                         <p>    
                             <div>
-                                <label for="message">Institute attended:</label>
-                                <input type="text" id="message" name="institute attended">
+                                <label for="message"></label>
+                                <input type="text" id="message" name="institute attended" placeholder="Institute Attended">
                             </div>
                         </p>
                         <p>
@@ -140,48 +246,55 @@
             
             <!--Work Section-->
             <section id="Work">
-                <h2>My Work</h2>
-                <p>In this section, you'll find the various projects i'm working on</p>
-                <ul>
-                    <li><b>Project 1</b></li>
-                </ul>
-                <img src="../GoMyCode Assessment 2/Images/commerce.jpg" alt="A page about E-Commerce" height="300px">
-                <figcaption><i>A page about E-Commerce</i></figcaption>
-                
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/3DdJ1JynG8M?si=E6WY5AM_2ctdhYYX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <ul>
-                    <li><b>Project 2</b></li>
-                </ul>
-                <img src="../GoMyCode Assessment 2/Images/hire.jpg" alt="A page for hiring" height="300px">
-                <figcaption><i>A page for hiring</i></figcaption>
+                <div>
+                    <div id="service">
+                        <h2 style="font-size: 50px;">We provide  Professional Services</h2>
+                        We focus on top quality services and that's why we're the leading innovators in the tech-space. In this section, you'll find the various projects being worked on: 
+                    </div>
+                    <div id="projects">
+                        <span id="proj1">
+                            <img src="../GoMyCode Assessment 2/Images/commerce.jpg" alt="A page about E-Commerce" height="250px">
+                            <figcaption><i>A page about E-Commerce</i></figcaption>
+                        </span>
+                       
+                        <br>
+                        <span id="proj1">
+                            <img src="../GoMyCode Assessment 2/Images/hire.jpg" alt="A page for hiring" height="250px">
+                            <figcaption><i>A page for hiring</i></figcaption> 
+                        </span>
+                       
+                    </div>
+                    
+                </div>
+                <img src="../GoMyCode Assessment 2/Images/animatedcoder2.jpg" alt="A Programmer coding while sitting down" height="600px">
             </section>
-
+           
             <section id="Resume">
-                <h2>My Resume</h2>
+                <h2 style="font-size: 50px;">My Resume</h2>
                 <p>Download my resume to know more about my work</p>
                 <a href="Resume">Download Resume</a>
             </section>
             
             <!--Contact Section-->
             <section id="Contact">
-                <h2>Contact Me</h2>
+                <h2 style="font-size: 50px;">Contact Me</h2>
                 <form action="https://httpbin.org/get" method="get">
-                    <fieldset>
+                    
                         <legend>Send Me A Message</legend>
                         <p>
-                            <label for="Firstname">First Name:</label>
+                            <label for="Firstname"></label>
                             <input type="text" name="Firstname" id="Firstname"  placeholder="Your Firstname" autocomplete="on" required autofocus>
                         </p>
                         <p>
-                            <label for="Lastname">Last Name:</label>
+                            <label for="Lastname"></label>
                             <input type="text" name="Lastname" id="Lastname" placeholder="Your Lastname" autocomplete="on" required >
                         </p>
                         <p>
-                            <label for="Email">Email:</label>
+                            <label for="Email"></label>
                             <input type="email" name="email" id="email" placeholder="johndoe123@gmail.com" autocomplete="on" required autofocus>
                         </p>
                         <p>
-                            <label for="number">Phone Number:</label>
+                            <label for="number"></label>
                             <input type="number" name="number" id="number" placeholder="+2341234567890" autocomplete="on" required>
                         </p>
                         <p>
