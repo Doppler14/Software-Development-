@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TalkMore</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  </head>
+  <body>
+    <header class="bg-gray-800 text-white py-4 px-6 flex justify-between items-center">
+      <h1 class="text-xl font-bold">TalkMore</h1>
+      <nav>
+        <a href="#" class="px-2 hover:text-gray-400">Home</a>
+        <a href="#" class="px-2 hover:text-gray-400">About</a>
+        <a href="#" class="px-2 hover:text-gray-400">Contact</a>
+      </nav>
+    </header>
+    
+    <section class="container flex flex-box gap-4 mx-3 py-2">
+      <h2 class="text-2xl font-bold mb-6">Featured Posts</h2>
+      <br>
+      <div class="bg-white rounded-lg w-1/3 shadow-md p-4">
+        <img src="/Images/womantalking.jpg" alt="Featured Post Image" class="w-full h-48 object-cover rounded-lg">
+        <h3 class="text-xl font-bold mt-4">Economy Talks</h3>
+        <p class="text-gray-700 mb-4">Senator Hilary has highlighted the dangers of continuous sale of oil...</p>
+        <a href="#" class="text-blue-500 hover:text-blue-700">Read More</a>
+      </div>
+      
+      
+      <div class="bg-white rounded-lg w-1/3 shadow-md p-4">
+        <img src="/Images/stadium.jpg" alt="Featured Post Image" class="w-full h-48 object-cover rounded-lg">
+        <h3 class="text-xl font-bold mt-4">Sports</h3>
+        <p class="text-gray-700 mb-4">FC Barcelona has announced the sale of their stadium naming rights(Nou Camp) ...</p>
+        <a href="#" class="text-blue-500 hover:text-blue-700">Read More</a>
+      </div>
+      
+      
+      <div class="bg-white rounded-lg w-1/3 shadow-md p-4">
+        <img src="/Images/food.jpg" alt="Featured Post Image" class="w-full h-48 object-cover rounded-lg">
+        <h3 class="text-xl font-bold mt-4">Food</h3>
+        <p class="text-gray-700 mb-4">On the food industry, the chef cooking competition coming up is the talk of the town...</p>
+        <a href="#" class="text-blue-500 hover:text-blue-700">Read More</a>
+      </div>
+    </section>
+  
+    <section class="container mx-4 py-8">
+      <h2 class="text-2xl font-bold mb-6">Explore Categories</h2>
+      <div class="flex flex-wrap gap-2">
+        <a href="#" class="bg-gray-200 text-gray-700 px-4 py-2 rounded-full hover:bg-gray-300">Technology</a>
+        <a href="#" class="bg-gray-200 text-gray-700 px-4 py-2 rounded-full hover:bg-gray-300">Lifestyle</a>
+      </div>
+    </section>
+    
+    <section class="container mx-4 py-8">
+      <h2 class="text-2xl font-bold mb-6">Recent Posts</h2>
+      <ul class="list-disc space-y-4">
+        <li><a href="#" class="text-gray-700 hover:text-blue-500">Post Title (Published: 2024-03-18)</a></li>
+        <li><a href="#" class="text-gray-700 hover:text-blue-500">Another Post Title (Published: 2024-03-15)</a></li>
+      </ul>
+    </section>
+    
+    <section class="container mx-auto py-4 bg-blue-300 px-4 rounded-lg">
+      <h2 class="text-xl font-bold mb-4">Subscribe to our Newsletter</h2>
+      <form action="#" method="post" class="flex gap-3 flex-wrap">
+        <input type="email" name="email" placeholder="Enter your email address" class="w-1/2 px-2  rounded-lg border border-gray-300 focus:outline-none focus:ring-1 focus:ring-blue-500">
+        <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-700 ml-4 md:ml-0 m-5">Subscribe</button>
+      </form>
+    </section>
+    <footer class="bg-gray-800 text-white py-4 px-4 flex justify-between items-center">
+      <div class="flex space-x-4 gap-3">
+        <a href="#" title="facebook" class="text-xl hover:text-gray-400">
+          <!-- <i class="fab fa-facebook-f"></i> -->
+          <i class="bi bi-facebook"></i>
+        </a>
+        <a href="#" title="twitter" class="text-xl hover:text-gray-400">
+          <i class="bi bi-twitter"></i>
+        </a>
+        <a href="#" title="instagram" class="text-xl hover:text-gray-400">
+          <i class="bi bi-instagram"></i>
+        </a>
+      </div>
+      <div class="text-sm gap-3">
+        &copy; 2024 TalkMore. All Rights Reserved.
+      </div>
+    </footer>
+    
+  </body>
+</html>
