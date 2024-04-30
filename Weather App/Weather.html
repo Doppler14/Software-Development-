@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weather App</title>
+        <link rel="stylesheet" href="Weather.css">
+        <!-- <style>
+            .w-info{
+                background-color: antiquewhite;
+                padding: 20px;
+                text-align: center;
+                border-radius: 5px;
+                margin-bottom: 50px;
+                margin-left: 20px;
+                margin-top: 20px;
+                margin-right: 20px;
+            }
+            #text1{
+                background-color: antiquewhite;
+                padding-left: 50px;
+                padding-right: 65px;
+                display: inline-flex;
+                margin-left: 20px;
+                margin-top: 20px;
+                border-radius: 5px;
+                align-items: center;
+            }
+            #text{
+                padding: 10px;
+                margin: 10px;
+                border-radius: 10px;
+                border: 1px solid ;
+            }
+            #search{
+                padding: 10px;
+                margin: 10px;
+                border-radius: 10px;
+                border: 1px solid ;
+            }
+        </style> -->
+    </head>
+    <body>
+        <!-- <main>
+            <div class="w-info">
+                <h1>Weather App</h1>
+                <p>Welcome to my app where you can find the weather info about different places</p>
+            </div>
+            <div id="text1">
+                <input type="text" id="text" placeholder="Enter Location">
+                <button type="submit" id="search" value="search">Search</button>
+            </div>
+            <div>
+                <p style="text-align: center;">The weather at your location is :</p>
+                <p id="w-result"></p>
+            </div>
+        </main> -->
+        <main>
+            <div class="w-info">
+                <h1>Weather App</h1>
+                <p>
+                    Welcome to weather app, here you check up the weather condition of you City
+                </p>
+            </div>
+            <div class="search">
+                <div style="background-color: white; display: flex; border-radius: 5px">
+                <input type="text" id="city-search" placeholder="Enter location" />
+                <div>|</div>
+                    <input 
+                        type="button"
+                        value="Search"
+                        id="search-button"
+                        onclick="getWeather()"
+                    />
+                </div>
+            </div>
+            <div id="weather-con">
+                <p id="w-result">The weather at your location is:</p>
+            </div>
+        </main>
+        <script src="/Javascript/Weather App/Weather.js"></script>
+    </body>
+</html>
