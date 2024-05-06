@@ -1,0 +1,33 @@
+Algorithm CountSentenceDetails(sentence)
+    Input: sentence (a string ending with a point)
+    Output: length (number of characters), numWords (number of words), numVowels (number of vowels)
+
+    // Initialize counters
+    length := 0
+    numWords := 0
+    numVowels := 0
+
+    // Loop through each character in the sentence
+    FOR i FROM 0 TO sentence.length - 1 DO
+        // Increment the length counter
+        length := length + 1
+
+        // Check if the character is a letter
+        IF IsLetter(sentence[i]) THEN
+            // Check if the letter is a vowel
+            IF IsVowel(sentence[i]) THEN
+                numVowels := numVowels + 1
+            END_IF
+        // Check if the character is a space
+        ELSE IF IsSpace(sentence[i]) THEN
+            // Increment the word counter
+            numWords := numWords + 1
+        END_IF
+    END_FOR
+
+    // Increment the word counter for the last word
+    numWords := numWords + 1
+
+    // Output the results
+    OUTPUT length, numWords, numVowels
+END Algorithm
