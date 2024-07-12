@@ -1,0 +1,70 @@
+class Product {
+    constructor(id, name, price) {
+      this.id = id;
+      this.name = name;
+      this.price = price;
+    }
+  }
+
+  
+  class ShoppingCartItem {
+    constructor(product, quantity) {
+      this.product = product;
+      this.quantity = quantity;
+    }
+  
+    calculateTotalPrice() {
+      return this.quantity * this.product.price;
+    }
+  }
+
+  
+  class ShoppingCart {
+    constructor() {
+      this.items = [];
+    }
+  
+    getTotalItems() {
+      return this.items.length;
+    }
+  
+    addItem(item) {
+      this.items.push(item);
+    }
+  
+    removeItem(productId) {
+      const index = this.items.findIndex(item => item.product.id === productId);
+      if (index !== -1) {
+        this.items.splice(index, 1);
+      }
+    }
+  
+    displayCartItems() {
+      console.log("=== Shopping Cart ===");
+      for (const item of this.items) {
+        const totalPrice = item.calculateTotalPrice();
+        console.log(`- ${item.quantity}x ${item.product.name} ($${item.product.price.toFixed(2)}) - Total: $${totalPrice.toFixed(2)}`);
+      }
+    }
+  }
+
+  
+  // Create products
+const product1 = new Product(1, "T-Shirt", 19.99);
+const product2 = new Product(2, "Jeans", 49.95);
+
+// Create a shopping cart
+const cart = new ShoppingCart();
+
+// Add items to the cart
+cart.addItem(new ShoppingCartItem(product1, 2));
+cart.addItem(new ShoppingCartItem(product2, 1));
+
+// Display the cart
+cart.displayCartItems();
+
+// Remove an item from the cart
+cart.removeItem(1); // Remove product with ID 1 (T-Shirt)
+
+// Display the cart again
+cart.displayCartItems();
